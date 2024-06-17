@@ -426,12 +426,11 @@ class _CupertinoTextSelectionControls extends SelectionControls {
         items.add(onePhysicalPixelVerticalDivider);
       }
 
-      Widget textWidget() => MediaQuery.withNoTextScaling(
-            child: Text(
-              icon == null ? text : ' $text',
-              style: _kPopupMenuButtonFontStyle,
-            ),
-          );
+      Widget textWidget() => Text(
+        icon == null ? text : ' $text',
+        style: _kPopupMenuButtonFontStyle,
+        textScaleFactor: 1.0,
+      );
 
       items.add(CupertinoButton(
         color: _kPopupMenuBackgroundColor,

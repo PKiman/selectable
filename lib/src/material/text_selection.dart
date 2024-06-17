@@ -105,8 +105,7 @@ class _Button extends StatelessWidget {
                 children: [
                   Icon(
                     icon,
-                    size: 20.0 *
-                        (MediaQuery.textScalerOf(context).scale(18) / 18.0),
+                    size: 20.0 * MediaQuery.of(context).textScaleFactor,
                     color: isDarkMode! ? Colors.white : Colors.black,
                   ),
                   _text,

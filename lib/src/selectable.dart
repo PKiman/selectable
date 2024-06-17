@@ -405,7 +405,11 @@ class _SelectableState extends State<Selectable>
     );
 
     _isBuilding = false;
-    return result;
+    return Container(
+      width: double.maxFinite,
+      height: double.maxFinite,
+      child: result,
+    );
   }
 
   //
